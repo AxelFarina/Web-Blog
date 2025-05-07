@@ -1,0 +1,67 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container-fluid mt-5">
+    <div class="row g-3">
+      <div class="col-12 col-md-4">
+        <img src="https://static.wixstatic.com/media/84770f_579889e3c7ab4551ac493b6e60ebc25a~mv2.jpg/v1/fill/w_625,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_579889e3c7ab4551ac493b6e60ebc25a~mv2.jpg" class="img-fluid w-100" alt="...">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://static.wixstatic.com/media/75059a_a28bb23346c740cfa809bb26a81ce414~mv2.jpg/v1/fill/w_625,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/75059a_a28bb23346c740cfa809bb26a81ce414~mv2.jpg" class="img-fluid w-100" alt="...">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://static.wixstatic.com/media/84770f_c8617aa06c6e43f5a95ebf63003a2347~mv2.jpg/v1/fill/w_625,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_c8617aa06c6e43f5a95ebf63003a2347~mv2.jpg" class="img-fluid w-100" alt="...">
+      </div>
+    </div>
+    <div class="container-fluid main-blog-h1">
+      <h1>My Life. My Blog.</h1>
+    </div>
+  </div>
+  
+  <!-- BLOG CONTENT -->
+  <div class="container mt-5">
+    <div class="row g-5">
+       <!-- LEFT COLUMN -->
+      <div class="col-md-6">
+        <!-- Blog Post 1 -->
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-auto d-none d-lg-block">
+             <!-- SVG/Image -->
+            <img src="https://static.wixstatic.com/media/75059a_cf2c39f511b6478eaea5b4f7713831c0~mv2.jpg/v1/fill/w_268,h_358,fp_0.50_0.50,q_90,enc_avif,quality_auto/75059a_cf2c39f511b6478eaea5b4f7713831c0~mv2.webp"/>
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <span>Mar 22, 2023 • 2 min read</span>
+            <a class="post-link mt-4" href="#">
+              <h3 class="mb-0">Transform your winter blues into winter creativity</h3>
+              <p class="card-text mb-auto mt-4">Create a blog post subtitle that sumarizes your post in a few short punchy sentences and..</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="right-side">
+          <div class="form-container">
+            <div class="form-text">
+            <h1><span>Let the posts <br/> come to you.</span></h1>
+            </div>
+            <div class="form-input mt-5 mx-5">
+              <form>
+                <label for="email">Email *</label> 
+                <input type="email" id="email" name="email" required>
+      
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="subscribe" name="subscribe" required>
+                  <label for="subscribe">Yes, subscribe me to your <br> newsletter. *</label>
+                </div>
+      
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<%- include("partials/footer.ejs") %>
