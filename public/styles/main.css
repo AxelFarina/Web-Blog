@@ -118,13 +118,19 @@ button.nav-link.custom-nav-link:hover {
     font-weight: bold;
 }
 
-.right-side{
+.right-column{
     display: flex;
     min-height: 100vh;
     background-color: #FEF2F0;
     align-items: center;
     justify-content: center;
 }
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .form-container{
     display: flex;
@@ -229,11 +235,153 @@ button:hover {
     background-color: #030404;
 }
 
+.all-posts{
+    background-color: #BB5A3A;
+    color: white;
+}
+
+.instagram-section {
+    background-color: #fef2f0;
+    padding: 40px 20px;
+  }
+  
+  .instagram-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .instagram-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* makes each item a perfect square */
+    object-fit: cover;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .social-icons {
+    font-size: 24px;
+  }
+  
+  .social-icons a {
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #b45f42;
+  }
+
+.footer-container{
+    background-color: #FEF2F0;
+}
+
+.top-footer{
+    margin-bottom: 40px;
+}
+
+.top-footer h2{
+    margin-top: 80px;
+}
+
+  .footer-copyright{
+    background-color: #BB5A3A;
+  }
+  
+  
+  .footer-heading {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .form-group input.form-control,
+  .form-group textarea.form-control {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid black;
+      color: black;
+      font-size: 16px;
+      padding: 8px 0;
+      outline: none;
+      box-shadow: none;
+      border-radius: 0;
+  }
+  
+  /* On hover */
+  .form-group input.form-control:hover,
+  .form-group textarea.form-control:hover {
+      border-bottom: 2px solid #b45f42;
+  }
+  
+  /* On focus */
+  .form-group input.form-control:focus,
+  .form-group textarea.form-control:focus {
+      border-bottom: 2px solid #b45f42;
+      box-shadow: none;
+      outline: none;
+  }
+
+  textarea.form-control::placeholder{
+    color: #030404;
+  }
+  
+  .btn-submit {
+    background-color: #b45f42;
+    color: white;
+    border: none;
+    width: 200px;  /* rectangle width */
+    height: 50px;  /* rectangle height */
+    border-radius: 0;  /* soften corners slightly */
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+
+  
+  .btn-submit:hover {
+    background-color: #030404;
+    color: white;
+  }
+  
+  .footer-text {
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  input.form-control,
+  textarea.form-control {
+    border-radius: 0;
+  }
+
+
+
 @media screen and (max-width: 768px) {
     .form-container {
         width: 100%;
         max-width: 386px;
         height: auto;
+        padding: 15px;
     }
 
     .right-side {
@@ -246,3 +394,4 @@ button:hover {
     
     }
 }
+
